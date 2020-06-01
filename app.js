@@ -4,11 +4,11 @@ const path_tmp = 'data/temp/files/';
 const url_data_files = [
     {
         file: 'Estados.json',
-        url: 'https://raw.githubusercontent.com/felipefdl/cidades-estados-brasil-json/master/Estados.json'
+        url: 'https://raw.githubusercontent.com/rundev-br/cidades-estados-brasil-json/master/Cidades.json'
     },
     {
         file: 'Cidades.json',
-        url: 'https://raw.githubusercontent.com/felipefdl/cidades-estados-brasil-json/master/Cidades.json'
+        url: 'https://raw.githubusercontent.com/rundev-br/cidades-estados-brasil-json/master/Cidades.json'
     },
 ];
 
