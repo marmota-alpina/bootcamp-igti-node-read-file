@@ -1,0 +1,19 @@
+{
+  "name": "bootcamp-igti-node-read-file",
+  "version": "1.0.0",
+  "description": "**Objetivos**",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rundev-br/bootcamp-igti-node-read-file.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rundev-br/bootcamp-igti-node-read-file/issues"
+  },
+  "homepage": "https://github.com/rundev-br/bootcamp-igti-node-read-file#readme"
+}
