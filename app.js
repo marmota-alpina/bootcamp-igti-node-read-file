@@ -1,6 +1,7 @@
 const {FileSystem} = require('./src/FileSystem');
 const {Download} = require('./src/Download');
 const path_tmp = 'data/temp/files/';
+const readline = require('readline');
 const url_data_files = [
     {
         file: 'Estados.json',
@@ -249,12 +250,18 @@ async function setup() {
 
     } catch (e) {
         console.log(e);
-    } finally {
-        console.log('Removendo arquivos temporários...')
-        await FileSystem.rmDir('data');
     }
 }
 
-setup();
+setup().then(()=>{
+    let read = readline.createInterface({ input: process.stdin, output: process.stdout});
 
+    read.question("Deseja remover os arquivos temporários [s/N]?\n", async function(answer) {
+        if(answer.toUpperCase()==='S'){
+            console.log('Removendo arquivos temporários...')
+            await FileSystem.rmDir('data');
+        }
+        read.close();
+    });
+});
 

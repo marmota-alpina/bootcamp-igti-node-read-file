@@ -18,9 +18,12 @@ const rmDir = (path) => new Promise((resolve, reject) => {
                     deleteFolderRecursive(curPath);
                 } else {
                     fs.unlinkSync(curPath);
+                    console.log(`rm ${curPath}`)
                 }
             });
             fs.rmdirSync(path);
+            console.log(`rmdir ${path}`)
+
         }
     };
 
